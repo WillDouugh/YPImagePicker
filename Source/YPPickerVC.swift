@@ -265,10 +265,15 @@ open class YPPickerVC: YPBottomPager, YPBottomPagerDelegate {
     
     func updateUI() {
         // Update Nav Bar state.
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: YPConfig.wordings.cancel,
-                                                           style: .plain,
-                                                           target: self,
-                                                           action: #selector(close))
+        let label = UILabel()
+        label.text = YPConfig.wordings.cancel
+        label.font = UIFont.systemFont(ofSize: 14)
+        
+        let cancelBarButton = UIBarButtonItem(customView: label)
+        cancelBarButton.action = #selector(close)
+        cancelBarButton.target = self
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: label)
         switch mode {
         case .library:
             setTitleViewWithTitle(aTitle: libraryVC?.title ?? "")
