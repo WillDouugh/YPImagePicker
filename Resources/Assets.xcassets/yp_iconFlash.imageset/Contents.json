@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "yp_icon_flash_off.pdf",
+      "filename" : "yp_iconFlash.pdf",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "yp_icon_flash_off@2x.pdf",
+      "filename" : "yp_iconFlash@2x.pdf",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "yp_icon_flash_off@3x.pdf",
+      "filename" : "yp_iconFlash@3x.pdf",
       "idiom" : "universal",
       "scale" : "3x"
     }
